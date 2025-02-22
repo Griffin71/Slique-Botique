@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Bouquets</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Slick Bouquets</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <style>
+        #scrollToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #333;
+        }
+    </style>
+    <main>
+       <center> 
+      <!--  -->
+        <style>
+            .welcome-heading {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+        <section id="home">
+            
+           
+        </section>
+        <h2 class="welcome-heading">🌸 Welcome to Slick Bouquets 🌸</h2>
+
+        <p class="intro-text">Your one-stop shop for beautiful flower arrangements.</p>
+        <p class="intro-text">All our bouquets are handmade and crafted from high-quality artificial flowers.</p>
+
+        <style>
+            .intro-text {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 10px 0;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            }
+        </style>
+       
+        <section id="about">
+            
+            <style>
+                .about-us-content {
+                    background: rgba(255, 255, 255, 0.9);
+                    padding: 20px;
+                    border-radius: 15px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                    font-family: 'Poppins', sans-serif;
+                    margin: 20px auto;
+                    width: 80%;
+                    text-align: center;
+                }
+
+                .about-us-content p {
+                    margin-bottom: 15px;
+                    line-height: 1.6;
+                    color: #333;
+                }
+                .about-us{
+                    
+    font-size: 2rem; /* Adjust size */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+    .about-us::after {
+        content: "";
+     display: block;
+     width: 80px;
+    height: 4px;
+     background: #ff6a00;
+     margin: 10px auto 0;
+     border-radius: 2px;
+}
+                
+            </style>
+            <div class="about-us-content">
+                <h2 class="about-us">About Us</h2>
+                <p>Slick Bouquets is a family-owned and operated florist located in Pretoria, South Africa.</p>
+                <p>We have been in business since 2025 and have built a reputation for excellence in the floral industry.</p>
+                <p>We specialize in creating stunning bouquets for all occasions.</p>
+                <p>Our team of skilled florists has over 20 years of combined experience in the floral industry. We pride ourselves on our attention to detail and our commitment to customer satisfaction.</p>
+                <p>At Slick Bouquets, we believe that flowers have the power to brighten anyone's day. That's why we use only the finest materials to create our arrangements, ensuring that each bouquet is a work of art.</p>
+                <p>Whether you're looking for a simple bouquet for a special someone or elaborate floral decorations for a big event, we've got you covered. Let us help you make your next occasion unforgettable with our beautiful flower arrangements.</p>
+            </div>
+        </section>
+        <section id="services">
+            <h2 class="services">Our Services</h2>
+            <style>
+                .services {
+    font-size: 2rem; /* Adjust size */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.services::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ff6a00;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+            </style>
+            <p>We offer a wide range of floral services to meet your needs.</p>
+            <ul>
+            <li>Custom Bouquets: Tailored to your specifications.</li>
+            <li>Wedding Arrangements: Beautiful floral designs for your special day.</li>
+            <li>Event Decorations: Stunning flowers for any event.</li>
+            <li>Corporate Services: Floral arrangements for offices and corporate events.</li>
+            <li>Subscription Services: Regular flower deliveries to your home or office.</li>
+            </ul>
+        </section>
+        <section id="prices">
+            <h2 class="price">Prices</h2>
+            <p>Here are our prices for various services:</p>
+            <ul>
+            <li>Standard Bouquet: R250</li>
+            <li>Deluxe Bouquet: R500</li>
+            <li>Wedding Package: R650</li>
+            <li>Event Decoration: R700</li>
+            </ul>
+        </section>
+
+        <style>
+            #services, #prices {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 20px auto;
+            width: 80%;
+            }
+
+            #services h2, #prices h2 {
+            color: #ff4081;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            }
+
+            #services ul, #prices ul {
+            list-style-type: none;
+            padding: 0;
+            }
+
+            #services li, #prices li {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            }
+
+                        .price {
+                font-size: 2rem; /* Adjust size */
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: 2px;
+                background: linear-gradient(90deg, #ff6a00, #ee0979);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                position: relative;
+                padding-bottom: 10px;
+            }
+
+            .price::after {
+                content: "";
+                display: block;
+                width: 80px;
+                height: 4px;
+                background: #ff6a00;
+                margin: 10px auto 0;
+                border-radius: 2px;
+            }
+
+
+        </style>
+          
+          <h2 class="services">Our Gallery</h2>
+
+                    <div class="gallery">
+                        <!-- Media 1: Image -->
+                        <div class="media">
+                            <img src="Assets/b9.jpg" alt="Image 1">
+                            <div class="actions">
+                                <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+                                <a href="Assets/b9.jpg" download class="download-btn">⬇️</a>
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- Media 3: Image -->
+                        <div class="media">
+                            <img src="Assets/b11.jpg" alt="Image 2">
+                            <div class="actions">
+                                <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+                                <a href="Assets/b11.jpg" download class="download-btn">⬇️</a>
+                            </div>
+                        </div>
+
+                        <!-- Media 4: Video -->
+                        <div class="media">
+                            <video src="Assets/b13.mp4" controls></video>
+                            <div class="actions">
+                                <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+                                <a href="Assets/b13.mp4" download class="download-btn">⬇️</a>
+                            </div>
+                        </div>
+
+                        <!-- Media 5: Image -->
+                        <div class="media">
+                            <img src="Assets/b5.jpg" alt="Image 3">
+                            <div class="actions">
+                                <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+                                <a href="Assets/b5.jpeg" download class="download-btn">⬇️</a>
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- Media 7: Image -->
+                        <div class="media">
+                            <img src="Assets/b6.jpg" alt="Image 4">
+                            <div class="actions">
+                                <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+                                <a href="Assets/b6.jpg" download class="download-btn">⬇️</a>
+                            </div>
+                        </div>
+
+                       
+
+                        <!-- Media 9: Image -->
+                        <div class="media">
+                            <img src="Assets/b8.jpg" alt="Image 5">
+                            <div class="actions">
+                                <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+                                <a href="Assets/b8.jpg" download class="download-btn">⬇️</a>
+                            </div>
+                        </div>
+
+                      
+
+                        <!-- Media 11: Image -->
+                        <div class="media">
+                            <img src="Assets/b4.jpg" alt="Image 6">
+                            <div class="actions">
+                                <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+                                <a href="Assets/b4.jpg" download class="download-btn">⬇️</a>
+                            </div>
+                        </div>
+
+                        <!-- Media 12: Video -->
+                        <div class="media">
+                            <img src="Assets/b9.jpg" alt ="Image 7">
+                            <div class="actions">
+                                <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+                                <a href="Assets/b9.jpg" download class="download-btn">⬇️</a>
+                            </div>
+                        </div>
+
+                        <!-- Media 13: Image -->
+                        <div class="media">
+                            <img src="Assets/b12.jpg" alt="Image 7">
+                            <div class="actions">
+                                <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+                                <a href="Assets/b12.jpg" download class="download-btn">⬇️</a>
+                            </div>
+                        </div>
+
+                        
+                        <!-- Media 15: Image -->
+                        <div class="media">
+                            <img src="Assets/b3.jpg" alt="Image 8">
+                            <div class="actions">
+                                <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+                                <a href="Assets/b3.jpg" download class="download-btn">⬇️</a>
+                            </div>
+                        </div>
+
+                       
+
+                        <!-- Media 17: Image -->
+                        <div class="media">
+                            <img src="Assets/b7.jpg" alt="Image 9">
+                            <div class="actions">
+                                <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+                                <a href="Assets/b7.jpg" download class="download-btn">⬇️</a>
+                            </div>
+                        </div>
+
+                      
+
+                        <!-- Media 19: Image -->
+                        <div class="media">
+                            <img src="Assets/b8.jpg" alt="Image 10">
+                            <div class="actions">
+                                <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+                                <a href="Assets/b8.jpg" download class="download-btn">⬇️</a>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+
+
+           
+            <section id="customize">
+                <h2>Customize Your Bouquet 💐</h2> 
+                <p>You can customize your bouquet by adding extra items. The total price will be calculated based on the selected items and their quantities.</p>
+                <form>
+                    <label>
+                        Ferrero Roché (+R7)
+                        <select id="fereroRocheQuantity" onchange="updatePrice()">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select> Quantity
+                    </label><br>
+                
+                    <label>
+                        Butterfly 🦋 (+R10)
+                        <select id="butterflyQuantity" onchange="updatePrice()">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select> Quantity
+                    </label><br>
+                
+                    <label>
+                        Bow at the top 🎀 (+R10)
+                        <select id="bowQuantity" onchange="updatePrice()">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select> Quantity
+                    </label><br>
+                
+                    <label>
+                        15 Marbles 🔵 (+R10)
+                        <select id="marblesQuantity" onchange="updatePrice()">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select> Quantity
+                    </label><br>
+                
+                    <label>
+                        Extra Stem 🌿 (+R10)
+                        <select id="extraStemQuantity" onchange="updatePrice()">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select> Quantity
+                    </label><br>
+                </form>
+                
+                <p id="totalPrice">Total Price: <span>R250</span></p>
+                
+            </section>
+
+            <style>
+                /* Custom Styling */
+                #customize {
+                    background: rgba(255, 255, 255, 0.9);
+                    padding: 20px;
+                    border-radius: 15px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                    text-align: center;
+                    font-family: 'Poppins', sans-serif;
+                    margin: 20px auto;
+                    width: 60%;
+                }
+
+                #customize h2 {
+                    color: #ff4081;
+                    font-size: 1.8rem;
+                    margin-bottom: 10px;
+                }
+
+                label {
+                    display: block;
+                    font-size: 1.1rem;
+                    margin-bottom: 8px;
+                }
+
+                select {
+                    padding: 5px;
+                    font-size: 1rem;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                }
+
+                input[type="checkbox"] {
+                    transform: scale(1.2);
+                    margin-right: 5px;
+                }
+
+                #totalPrice {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #ff4081;
+                    margin-top: 15px;
+                }
+
+                #totalPrice span {
+                    background: #ffebee;
+                    padding: 5px 10px;
+                    border-radius: 8px;
+                    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+                }
+            </style>
+            <script>
+              function updatePrice() {
+    let basePrice = 250;
+
+    // Item prices and IDs
+    const items = [
+        { price: 7, quantityId: "fereroRocheQuantity" },
+        { price: 10, quantityId: "butterflyQuantity" },
+        { price: 10, quantityId: "bowQuantity" },
+        { price: 10, quantityId: "marblesQuantity" },
+        { price: 10, quantityId: "extraStemQuantity" }
+    ];
+
+    let totalExtras = 0;
+
+    items.forEach(item => {
+        const quantity = parseInt(document.getElementById(item.quantityId).value) || 0;
+        totalExtras += quantity * item.price;
+    });
+
+    // Updating total price
+    const totalPrice = basePrice + totalExtras;
+    document.getElementById("totalPrice").innerHTML = `Total Price: <span>R${totalPrice}</span>`;
+}
+
+            </script>
+            
+
+
+        </section>
+        <section id="faq">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <h3>What is your delivery area? <button class="faq-toggle" onclick="toggleFaq(this)">+</button></h3>
+                <p class="faq-answer" style="display: none;">We deliver within a 50-mile radius of our shop.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I customize my bouquet? <button class="faq-toggle" onclick="toggleFaq(this)">+</button></h3>
+                <p class="faq-answer" style="display: none;">Yes, we offer customization options for all our bouquets.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How far in advance should I place my order? <button class="faq-toggle" onclick="toggleFaq(this)">+</button></h3>
+                <p class="faq-answer" style="display: none;">We recommend placing your order at least 48 hours in advance.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you offer same-day delivery? <button class="faq-toggle" onclick="toggleFaq(this)">+</button></h3>
+                <p class="faq-answer" style="display: none;">Yes, we offer same-day delivery for orders placed before 12 PM.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What payment methods do you accept? <button class="faq-toggle" onclick="toggleFaq(this)">+</button></h3>
+                <p class="faq-answer" style="display: none;">We accept credit cards, PayPal, and bank transfers.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I cancel or change my order? <button class="faq-toggle" onclick="toggleFaq(this)">+</button></h3>
+                <p class="faq-answer" style="display: none;">Yes, you can cancel or change your order up to 24 hours before the delivery date.</p>
+            </div>
+        </section>
+
+        <style>
+            #faq {
+                background: rgba(255, 255, 255, 0.9);
+                padding: 20px;
+                border-radius: 15px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                margin: 20px auto;
+                width: 80%;
+                max-width: 600px;
+            }
+
+            #faq h2 {
+                color: #ff4081;
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+            }
+
+            .faq-item {
+                margin-bottom: 15px;
+                text-align: left;
+            }
+
+            .faq-item h3 {
+                font-size: 1.2rem;
+                color: #333;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .faq-answer {
+                font-size: 1rem;
+                color: #555;
+                margin-top: 5px;
+                display: none;
+            }
+
+            .faq-toggle {
+                background: none;
+                border: none;
+                font-size: 1.2rem;
+                color: #ff4081;
+                cursor: pointer;
+            }
+
+            .faq-toggle:hover {
+                color: #333;
+            }
+        </style>
+
+        <script>
+            function toggleFaq(button) {
+                const answer = button.closest('.faq-item').querySelector('.faq-answer');
+                if (answer.style.display === "none") {
+                    answer.style.display = "block";
+                    button.textContent = "-";
+                } else {
+                    answer.style.display = "none";
+                    button.textContent = "+";
+                }
+            }
+        </script>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.7379051161565!2d28.284569375553914!3d-25.77921924680101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9560bd5713a44f%3A0xbd4d061dde919db3!2s60%20Malabor%20Rd%20S%2C%20Lynnwood%20Glen%2C%20Pretoria%2C%200081!5e0!3m2!1sen!2sza!4v1739972260808!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-info">
+                <p>Get in touch with us for more information.</p>
+                <p><i class="fa fa-envelope"></i> Email: <a href="mailto:tinyiko0324@gmail.com">tinyiko0324@gmail.com</a></p>
+                <p><i class="fa fa-phone"></i> Phone: <a href="tel:+27672193088">+27 67 219 3088</a></p>
+                <a href="https://wa.me/27834660549" target="_blank">
+                    <i class="fa-brands fa-whatsapp" style="font-size:24px; color: green;"></i> Contact via WhatsApp
+                </a>
+                
+                
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Lihle Slick" target="_blank"><i class="fab fa-facebook"></i></a>
+                   <!-- <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>-->
+                    <a href="https://www.instagram.com/model_slick" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <style>
+                    .social-icons {
+                        display: flex;
+                        justify-content: center;
+                        gap: 20px;
+                        margin-top: 20px;
+                    }
+
+                    .social-icons a {
+                        font-size: 2rem;
+                        color: #ff4081;
+                    }
+
+                    .social-icons a:hover {
+                        color: #333;
+                    }
+                </style>
+
+            </div>
+            </div>
+        </section>
+
+        <style>
+            #contact {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 20px auto;
+            width: 80%;
+            }
+
+            #contact h2 {
+            color: #ff4081;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            }
+
+            .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+
+            .contact-info {
+            margin-top: 20px;
+            text-align: center;
+            }
+
+            .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            }
+
+            .contact-info a {
+            color: #ff4081;
+            text-decoration: none;
+            }
+
+            .contact-info a:hover {
+            text-decoration: underline;
+            }
+
+            @media (min-width: 768px) {
+            .contact-container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .contact-info {
+                margin-top: 0;
+                margin-left: 20px;
+            }
+            }
+        </style>
+    </main>
+    <footer>
+        <p>&copy; 2025 Slick Bouquets. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        <p>From <a href="https://griffin71.github.io/linetechh/">Line-Tech</a> and <a href="https://griffin71.github.io/Byte-Services/">Byte-Services</a> </p>
+    </footer>
+    <script src="cookies.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

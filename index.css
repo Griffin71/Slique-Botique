@@ -1,0 +1,1095 @@
+/* Add this at the end of your existing CSS */
+#cookieConsent {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+#cookieConsent button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff0f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    cursor: url('Assets/cursor.jpeg'), auto;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #ffdde1, #ee9ca7);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.floating-item {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+    animation: float 10s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+}
+
+/* Different sizes */
+.floating-item.small { width: 30px; height: 30px; }
+.floating-item.medium { width: 50px; height: 50px; }
+.floating-item.large { width: 70px; height: 70px; }
+
+/* Effects */
+button {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
+}
+
+/* Customize Your Bouquet Section */
+#customize {
+    background-color: #ffe6e6;
+    color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#customize h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6b81;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#customize form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+label:hover {
+    color: #ff4757;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #ff6b81;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+    transform: scale(1.2);
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+    border: 2px solid #ff6b81;
+}
+
+#totalPrice {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6b81;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    #customize {
+        padding: 20px;
+    }
+
+    #customize h2 {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    #totalPrice {
+        font-size: 1rem;
+    }
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(to right, #ff6b81, #ff4757);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    transform: scale(1.1);
+    background-color: #ff4757;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+h2 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+button {
+    animation: pulse 1.5s infinite alternate;
+}
+
+.welcome-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    background: linear-gradient(90deg, #ffdde1, #ee9ca7);
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, #ffdde1, #ee9ca7);
+    padding: 10px;
+    border-radius: 15;
+    margin: 0px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.about-us {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #6a0572; /* Deep purple for a luxurious feel */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    border-radius: 8px;
+    display: inline-block;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(90deg, #ffdde1, #ee9ca7); /* Transparent background */
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #3f313b;
+    backdrop-filter: blur(10px); /* Glass effect */
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #f10c08;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    text-shadow: 0px 0px 8px rgba(255, 204, 203, 0.8); /* Soft pink glow */
+}
+
+
+/* Floating Emojis */
+.floating-emoji {
+    position: absolute;
+    font-size: 5.5rem;
+    opacity: 5.5;
+    animation: float 10s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+}
+
+#home {
+    background: url('Assets/b5.jpg'), 
+                url('Assets/b4.jpg'), 
+                url('Assets/b7.jpg');
+            
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left center, center center, right center; 
+    background-size: 33.33% auto, 33.33% auto, 33.33% auto; /* Adjust width for 3 images */
+    height: 300px; /* Adjust height */
+    color: white; /* Text color */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Cursor */
+body, button, a {
+    cursor: url('Assets/cursor.jpeg'), auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.media {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.media img, .media video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.like-btn, .download-btn {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Desktop and larger screens */
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.2rem;
+    }
+    .intro-text {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .about-us-content {
+        width: 60%;
+        margin: 50px auto;
+        padding: 30px;
+    }
+    .services {
+        font-size: 2.5rem;
+    }
+    .price {
+        font-size: 2rem;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+    .intro-text {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .about-us-content {
+        width: 80%;
+        margin: 40px auto;
+    }
+    .services {
+        font-size: 2.2rem;
+    }
+    .price {
+        font-size: 1.8rem;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* Mobile (landscape and portrait) */
+@media (max-width: 768px) {
+    .intro-text {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .about-us-content {
+        width: 90%;
+        margin: 30px auto;
+    }
+    .services {
+        font-size: 2rem;
+    }
+    .price {
+        font-size: 1.6rem;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+/* Mobile small screens (iPhone SE, smaller Android phones) */
+@media (max-width: 480px) {
+    .intro-text {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .about-us-content {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .services {
+        font-size: 1.8rem;
+    }
+    .price {
+        font-size: 1.4rem;
+    }
+    .gallery {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Smart TVs */
+@media (min-width: 1920px) {
+    .intro-text {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .about-us-content {
+        width: 60%;
+        margin: 50px auto;
+    }
+    .services {
+        font-size: 3rem;
+    }
+    .price {
+        font-size: 2.5rem;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Default styles (for larger screens) */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.media img {
+    width: 100%;
+    height: auto;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    /* Tablets or medium devices (e.g., iPads, smaller laptops) */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Small devices (e.g., iPhones, Samsung phones) */
+    .gallery {
+        grid-template-columns: 1fr;
+        margin: 0 10px;
+    }
+
+    .media {
+        margin-bottom: 20px;
+    }
+
+    /* Actions */
+    .actions {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .download-btn,
+    .like-btn {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile-specific styles */
+    h2.services {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #customize h2 {
+        font-size: 1.3em;
+    }
+
+    #customize form {
+        padding: 0 10px;
+    }
+
+    #customize label {
+        font-size: 1em;
+    }
+
+    #totalPrice {
+        font-size: 1.2em;
+    }
+
+    .gallery img {
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Default styles for larger screens */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.media img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.like-btn,
+.download-btn {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Tablet or medium devices (1024px and below) */
+@media (max-width: 1024px) {
+    /* Reduce grid to 2 columns */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Adjust image styling */
+    .media img {
+        border-radius: 6px;
+    }
+
+    /* Stack action buttons vertically */
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .like-btn,
+    .download-btn {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+}
+
+/* Small devices (phones, including iPhones, Samsung) */
+@media (max-width: 768px) {
+    /* Gallery with 1 column layout */
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .media {
+        margin-bottom: 20px;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .like-btn,
+    .download-btn {
+        font-size: 1.2em;
+        margin-bottom: 8px;
+    }
+
+    /* Adjust heading size for better readability */
+    h2.services {
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    /* Form input adjustment for smaller screens */
+    #customize label {
+        font-size: 1em;
+        padding: 8px 0;
+    }
+
+    #customize select {
+        padding: 8px;
+        font-size: 1em;
+        width: 100%;
+    }
+
+    #totalPrice {
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
+
+/* Mobile-specific styles (below 480px) */
+@media (max-width: 480px) {
+    /* Make title smaller for mobile */
+    h2.services {
+        font-size: 1.4em;
+    }
+
+    /* Gallery adjusts with larger gaps for better mobile viewing */
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .media img {
+        border-radius: 8px;
+        box-shadow: none;
+    }
+
+    /* Form customization adjustments */
+    #customize form {
+        padding: 10px;
+    }
+
+    #customize label {
+        font-size: 1.2em;
+    }
+
+    #totalPrice {
+        font-size: 1.4em;
+        margin-top: 10px;
+    }
+
+    /* Adjust action buttons size */
+    .like-btn,
+    .download-btn {
+        font-size: 1.3em;
+        margin-bottom: 6px;
+    }
+
+    /* Ensure content fits within small screens */
+    .actions {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+/* Extra small devices (portrait mode on very small phones) */
+@media (max-width: 360px) {
+    /* Reduce gallery padding */
+    .gallery {
+        padding: 5px;
+    }
+
+    /* Adjust the gallery layout */
+    .media img {
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+        padding: 0 10px;
+    }
+
+    .like-btn,
+    .download-btn {
+        font-size: 1.2em;
+    }
+
+    #customize label,
+    #totalPrice {
+        font-size: 1.1em;
+    }
+}
+
+/* Tablet or medium devices (1024px and below) */
+@media (max-width: 1024px) {
+    #contact h2 {
+        font-size: 2em;
+    }
+
+    .contact-container iframe {
+        width: 90%;
+        height: 350px;
+    }
+
+    .contact-info {
+        font-size: 1.1em;
+    }
+
+    .social-icons a {
+        font-size: 1.4em;
+    }
+}
+
+/* Small devices (phones, including iPhones, Samsung) */
+@media (max-width: 768px) {
+    #contact {
+        padding: 30px 15px;
+    }
+
+    #contact h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-container iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .contact-info {
+        font-size: 1em;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
+
+    .social-icons a {
+        font-size: 1.3em;
+    }
+
+    .contact-info a {
+        font-size: 1.1em;
+    }
+}
+
+/* Mobile-specific styles (below 480px) */
+@media (max-width: 480px) {
+    #contact {
+        padding: 20px 10px;
+    }
+
+    #contact h2 {
+        font-size: 1.6em;
+    }
+
+    .contact-container iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .contact-info {
+        font-size: 0.9em;
+    }
+
+    .social-icons a {
+        font-size: 1.2em;
+        margin: 0 10px;
+    }
+
+    .contact-info i {
+        font-size: 1.2em;
+    }
+
+    .contact-info a {
+        font-size: 1.2em;
+    }
+}
+
+/* Extra Large Screens (larger than 1200px) */
+@media (min-width: 1200px) {
+    #contact {
+        padding: 60px 40px;
+    }
+
+    #contact h2 {
+        font-size: 2.6em;
+    }
+
+    .contact-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .contact-container iframe {
+        width: 75%;
+        height: 450px;
+    }
+
+    .contact-info {
+        font-size: 1.3em;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .social-icons a {
+        font-size: 1.7em;
+    }
+}
+
+/* Large Screens (between 1024px and 1200px) */
+@media (min-width: 1025px) and (max-width: 1199px) {
+    #contact {
+        padding: 50px 30px;
+    }
+
+    #contact h2 {
+        font-size: 2.3em;
+    }
+
+    .contact-container iframe {
+        width: 80%;
+        height: 400px;
+    }
+
+    .contact-info {
+        font-size: 1.2em;
+    }
+
+    .social-icons a {
+        font-size: 1.6em;
+    }
+}
+
+/* Small Screens (Portrait tablets, 600px - 768px) */
+@media (min-width: 600px) and (max-width: 767px) {
+    #contact {
+        padding: 40px 20px;
+    }
+
+    #contact h2 {
+        font-size: 2.1em;
+    }
+
+    .contact-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contact-info {
+        font-size: 1.1em;
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+    }
+}
+
+/* Very Small Screens (Mobile landscape, 320px - 599px) */
+@media (min-width: 320px) and (max-width: 599px) {
+    #contact {
+        padding: 25px 15px;
+    }
+
+    #contact h2 {
+        font-size: 1.7em;
+    }
+
+    .contact-container iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .contact-info {
+        font-size: 0.9em;
+    }
+
+    .social-icons a {
+        font-size: 1.3em;
+    }
+
+    .contact-info a {
+        font-size: 1.1em;
+    }
+}
+
+/* Ultra Small Screens (Phones below 320px) */
+@media (max-width: 319px) {
+    #contact {
+        padding: 20px 10px;
+    }
+
+    #contact h2 {
+        font-size: 1.6em;
+    }
+
+    .contact-container iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .contact-info {
+        font-size: 0.8em;
+    }
+
+    .social-icons a {
+        font-size: 1.1em;
+    }
+
+    .contact-info a {
+        font-size: 1.0em;
+    }
+}
+
+/* iPhone 12 / 12 Pro / iPhone X (375px wide) */
+@media (device-width: 375px) and (device-height: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    #contact {
+        padding: 30px 20px;
+    }
+
+    #contact h2 {
+        font-size: 1.9em;
+    }
+
+    .contact-container iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .contact-info {
+        font-size: 1em;
+    }
+
+    .social-icons a {
+        font-size: 1.4em;
+    }
+
+    .contact-info a {
+        font-size: 1.1em;
+    }
+}
+
+/* iPhone 12 Pro Max / iPhone 11 Pro Max / iPhone XS Max (414px wide) */
+@media (device-width: 414px) and (device-height: 896px) and (-webkit-min-device-pixel-ratio: 3) {
+    #contact {
+        padding: 40px 25px;
+    }
+
+    #contact h2 {
+        font-size: 2em;
+    }
+
+    .contact-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contact-info {
+        font-size: 1.1em;
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+    }
+
+    .contact-info a {
+        font-size: 1.2em;
+    }
+}
+
+/* iPhone 7 / 8 (375px wide) */
+@media (device-width: 375px) and (device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    #contact {
+        padding: 30px 20px;
+    }
+
+    #contact h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-container iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .contact-info {
+        font-size: 0.9em;
+    }
+
+    .social-icons a {
+        font-size: 1.3em;
+    }
+
+    .contact-info a {
+        font-size: 1.0em;
+    }
+}
+
+/* iPhone SE (1st generation) and older (320px wide) */
+@media (device-width: 320px) and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    #contact {
+        padding: 20px 15px;
+    }
+
+    #contact h2 {
+        font-size: 1.6em;
+    }
+
+    .contact-container iframe {
+        width: 100%;
+        height: 180px;
+    }
+
+    .contact-info {
+        font-size: 0.85em;
+    }
+
+    .social-icons a {
+        font-size: 1.2em;
+    }
+
+    .contact-info a {
+        font-size: 0.9em;
+    }
+}
+
+/* iPhone XR / iPhone 11 (414px wide) */
+@media (device-width: 414px) and (device-height: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+    #contact {
+        padding: 40px 25px;
+    }
+
+    #contact h2 {
+        font-size: 2em;
+    }
+
+    .contact-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contact-info {
+        font-size: 1.1em;
+    }
+
+    .social-icons a {
+        font-size: 1.6em;
+    }
+
+    .contact-info a {
+        font-size: 1.2em;
+    }
+}

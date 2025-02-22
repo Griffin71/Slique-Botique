@@ -1,0 +1,144 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+}
+
+header .logo-container a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Terms and Conditions Styles */
+#terms-conditions {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#terms-conditions h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#terms-conditions h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+#terms-conditions p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+#terms-conditions a {
+    color: #3498db;
+}
+
+#terms-conditions a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #terms-conditions {
+        padding: 15px;
+    }
+
+    #terms-conditions h1 {
+        font-size: 2em;
+    }
+
+    #terms-conditions h2 {
+        font-size: 1.5em;
+    }
+
+    #terms-conditions p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #terms-conditions h1 {
+        font-size: 1.8em;
+    }
+
+    #terms-conditions h2 {
+        font-size: 1.4em;
+    }
+
+    #terms-conditions p {
+        font-size: 0.95em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
